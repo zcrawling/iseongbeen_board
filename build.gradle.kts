@@ -34,9 +34,7 @@ dependencies {
 }
 
 kotlin {
-    compilerOptions {
-        freeCompilerArgs.addAll("-Xjsr305=strict", "-Xannotation-default-target=param-property")
-    }
+    jvmToolchain(21)
 }
 
 tasks.withType<Test> {
